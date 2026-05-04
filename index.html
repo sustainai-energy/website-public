@@ -2,21 +2,511 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="description"
+          content="Sustain AI is an energy operating system for data centres operating under power constraints. We help operators increase compute efficiency, reduce energy consumption, and unlock additional capacity without expanding infrastructure.">
+    <meta name="keywords"
+          content="data center energy optimisation, data center efficiency, data centre energy optimisation, data centre efficiency, AI for data centres, compute orchestration, energy management system, power constrained computing, data centre optimisation software, grid responsive computing, infrastructure efficiency, sustainable data centres">
+    <meta property="og:title"
+          content="Sustain AI - Energy Optimisation for Power-Constrained Data Centres">
+    <meta property="og:description"
+          content="An energy operating system for data centres. Sustain AI orchestrates compute within power constraints to increase efficiency, reduce energy use, and unlock capacity.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sustainai.energy">
+    <meta name="application-name" content="Sustain AI">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sustain AI - Coming Soon</title>
+    <link rel="icon" href="img/logo/logo_orange.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Sustain AI | Energy Operating System for Data Centres</title>
+    <link href="output.css" rel="stylesheet">
 </head>
-
-<body style="background-color: #1b375e; color: white; margin: 0;">
-
+<body class="bg-white text-gray-600 font-sans flex flex-col min-h-screen">
+<header id="main-header"
+        class="sticky top-0 z-50 w-full flex flex-row justify-between items-center bg-secondary backdrop-blur-md shadow-lg px-6 py-6 border-b border-gray-200 transition-all duration-300">
+    <a href="index.html" class="flex items-start hover:opacity-75">
+        <div class="logo mr-2">
+            <img src="img/logo/logo_white.svg" alt="Sustain AI Logo" class="w-12 h-12">
+        </div>
+        <div class="flex flex-col text-white leading-none">
+            <span class="text-xl font-bold">Sustain AI</span>
+            <span class="text-sm">The energy operating system.</span>
+        </div>
+    </a>
+    <!-- Desktop menu - centered on desktop -->
+    <nav id="desktop-menu" class="hidden md:flex space-x-6 text-white font-medium">
+        <a href="#solution" class="hover:text-orange hover:underline">Solution</a>
+        <a href="#technology" class="hover:text-orange hover:underline">Technology</a>
+        <a href="#ecosystem" class="hover:text-orange hover:underline">Ecosystem</a>
+        <a href="#aboutus" class="hover:text-orange hover:underline">About Us</a>
+        <a href="#contact" class="hover:text-orange hover:underline">Request Demo</a>
+    </nav>
+    <!-- Mobile menu (hidden by default) -->
+    <div id="mobile-menu"
+         class="absolute top-full right-6 mt-2 w-48 bg-white shadow-lg rounded-lg hidden flex-col py-2">
+        <a href="#solution" class="block px-2 py-2 text-gray-600 border-b border-gray-200">Solution</a>
+        <a href="#technology" class="block px-2 py-2 text-gray-600 border-b border-gray-200">Technology</a>
+        <a href="#ecosystem" class="block px-2 py-2 text-gray-600 border-b border-gray-200">Ecosystem</a>
+        <a href="#aboutus" class="block px-2 py-2 text-gray-600 border-b border-gray-200">About Us</a>
+        <a href="#contact" class="block px-2 py-2 text-gray-600">Request Demo</a>
+    </div>
+    <!-- Mobile burger button -->
+    <div class="md:hidden ml-auto">
+        <button id="menu-btn" class="text-white focus:outline-none" aria-label="Toggle navigation menu">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+        </button>
+    </div>
+</header>
 <main>
-    <section id="hero" style="padding: 3rem 1.5rem; text-align: center;">
-        <div style="max-width: 800px; margin: 0 auto; border-bottom: 1px solid rgba(255,255,255,0.3);">
-            <h1 style="font-size: 2.5rem; font-weight: bold;">
-                Sustain AI Ltd. Website Coming Soon.
+    <section id="solution" class="bg-gradient-to-r from-primary to-secondary py-6 scroll-mt-24">
+        <div class="max-w-4xl mx-auto px-6 text-center mb-6">
+            <h1 class="text-white text-4xl md:text-6xl font-bold mb-6">
+                The energy operating system for data centres.
             </h1>
         </div>
     </section>
+    <!-- Hero Section - Redesigned Split Layout -->
+    <section class="relative w-full bg-gradient-to-r from-primary to-secondary py-6 md:py-6">
+        <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+            <!-- Left Side: Text Content -->
+            <div class="md:w-1/2 text-white">
+                <h2 class="text-white text-2xl md:text-4xl font-bold mb-6">
+                    We help IT infrastructure owners slash costs, boost efficiency, and hit sustainability goals.
+                </h2>
+                <div class="w-24 h-1 bg-white mx-auto md:mx-0 mb-6"></div>
+                <p class="text-white text-base font-medium mb-6">
+                    Our solution optimises IT infrastructure power draw within limits, dynamically balancing demand to
+                    maximise utilisation and performance.
+                </p>
+                <a href="#contact"
+                   class="bg-orange px-6 py-2 rounded-lg text-white font-semibold shadow-lg hover:bg-light hover:text-primary">
+                    Request a Demo
+                </a>
+            </div>
+            <!-- Right Side: Video -->
+            <div class="md:w-1/2 relative flex justify-center items-center">
+                <video src="img/solution/homepage_start_720p.mp4" autoplay loop muted playsinline
+                       class="w-full aspect-[3/2] object-cover rounded-lg shadow-lg"></video>
+                <div class="absolute inset-0 flex flex-col items-center justify-center p-6 text-center bg-black/20 rounded-lg">
+                    <h2 class="text-white text-2xl md:text-4xl font-bold mb-6 drop-shadow-2xl">
+                        Every Watt Counts.
+                    </h2>
+                    <p class="text-white text-base drop-shadow-xl font-medium">When power is constrained, efficiency
+                        drives growth.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Solution / Value Section -->
+    <section class="py-6 bg-secondary scroll-mt-24">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-6 px-6">
+            <div class="rounded-lg shadow-lg bg-secondary border border-gray-200 overflow-hidden flex flex-col">
+                <div class="p-6 flex-1">
+                    <h2 class="text-4xl font-bold text-white text-center mb-2">
+                        ↑ 30%
+                    </h2>
+                    <h3 class="text-2xl font-bold text-white text-center">
+                        Compute Density
+                    </h3>
+                    <p class="mt-2 text-white text-center">
+                        Increase compute density within existing power constraints (up to ~30% in certain
+                        environments)*.
+                    </p>
+                    <p class="mt-2 text-white text-center">
+                        Deploy additional capacity without expanding power infrastructure.
+                    </p>
+                </div>
+            </div>
+            <div class="rounded-lg shadow-lg bg-secondary border border-gray-200 overflow-hidden flex flex-col">
+                <div class="p-6 flex-1">
+                    <h2 class="text-4xl font-bold text-white text-center mb-2">
+                        ↓ 25%
+                    </h2>
+                    <h3 class="text-2xl font-bold text-white text-center">
+                        Energy Consumption
+                    </h3>
+                    <p class="mt-2 text-white text-center">
+                        Reduce energy consumption for a given compute workload (up to ~25% under specific conditions)*.
+                    </p>
+                    <p class="mt-2 text-white text-center">
+                        Lower operating costs with controlled performance impact.
+                    </p>
+                </div>
+            </div>
+            <div class="rounded-lg shadow-lg bg-secondary border border-gray-200 overflow-hidden flex flex-col">
+                <div class="p-6 flex-1">
+                    <h2 class="text-4xl font-bold text-white text-center mb-2">
+                        ↓ 40%
+                    </h2>
+                    <h3 class="text-2xl font-bold text-white text-center">
+                        Peak Power Demand
+                    </h3>
+                    <p class="mt-2 text-white text-center">
+                        Reduce peak power demand (up to ~40% in defined scenarios)*.
+                    </p>
+                    <p class="mt-2 text-white text-center">
+                        Operate reliably within grid constraints with controlled performance impact.
+                    </p>
+                </div>
+            </div>
+            <div class="rounded-lg shadow-lg bg-secondary border border-gray-200 overflow-hidden flex flex-col">
+                <div class="p-6 flex-1">
+                    <h2 class="text-4xl font-bold text-white text-center mb-2">
+                        ↓ 330 Tonnes CO₂e
+                    </h2>
+                    <h3 class="text-2xl font-bold text-white text-center">
+                        Carbon Emissions
+                    </h3>
+                    <p class="mt-2 text-white text-center">
+                        Reduce carbon emissions per MW of capacity (up to ~330 tonnes CO₂e, depending on energy mix)*.
+                    </p>
+                    <p class="mt-2 text-white text-center">
+                        Lower Scope 2 emissions through more efficient power utilisation.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <p class="max-w-6xl mx-auto text-center text-sm text-white px-6 mt-6 bg-secondary">
+            * Based on modelling and observed results in specific environments. These figures are illustrative and do
+            not represent typical outcomes. Actual results will vary depending on workload characteristics,
+            infrastructure, and operating conditions.
+        </p>
+    </section>
+    <!-- Technology Section -->
+    <section id="technology" class="bg-gradient-to-r from-primary to-secondary py-6 scroll-mt-24">
+        <div class="max-w-6xl mx-auto text-center mb-6 px-6 py-6">
+            <h2 class="text-2xl text-white md:text-4xl font-bold">
+                Technology
+            </h2>
+            <p class="mt-2 text-white">
+                Orchestrates compute infrastructure for higher density and lower energy use, based on policy and grid
+                conditions.
+            </p>
+        </div>
+        <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+            <!-- Left Side: Image -->
+            <div class="md:w-1/2 flex justify-center items-center relative">
+                <img src="img/technology/energy_operating_system_graph.svg"
+                     alt="Sustain AI Energy Operating System Graphic" class="w-full h-auto"
+                     loading="lazy">
+            </div>
+            <!-- Right Side: Text Content -->
+            <div class="md:w-1/2 text-white">
+                <p class="text-white mb-6 text-justify">
+                    The <strong>Sustain AI Energy Operating System</strong> orchestrates compute and infrastructure
+                    within strict power constraints, dynamically aligning IT demand with grid conditions to reduce
+                    energy use. Transforming IT infrastructure from passive consumers into active grid stabilisers. This
+                    enables additional compute capacity without expanding power infrastructure, enabling more
+                    sustainable, higher-density computing at scale. </p>
+                <p class="text-white mb-6 text-justify">
+                    It is designed for power-intensive environments including <strong>AI</strong> and
+                    <strong>HPC</strong> workloads, private <strong>cloud</strong>, and resource-constrained
+                    <strong>edge</strong> deployments. By coordinating compute, power, and cooling systems, it enables
+                    infrastructure to adapt to run-time conditions, for example, increasing throughput when renewable
+                    energy is abundant or reducing load during periods of grid stress.
+                </p>
+                <ul class="list-disc list-outside text-white text-left space-y-2 text-base pl-5">
+                    <li>
+                        Integrates with compute platforms, facility control systems, and utility signals through
+                        standard APIs & interfaces.
+                    </li>
+                    <li>
+                        Coordinates compute behaviour with grid conditions and operational policies.
+                    </li>
+                    <li>
+                        Enables additional compute capacity without expanding power infrastructure.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="ecosystem" class="py-6 bg-secondary scroll-mt-24">
+        <div class="max-w-6xl mx-auto text-center mb-6 px-6 py-6">
+            <h2 class="text-2xl text-white md:text-4xl font-bold">
+                Ecosystem
+            </h2>
+            <p class="mt-2 text-white">
+                How stakeholders benefit from the Sustain AI Energy Operating System platform.
+            </p>
+        </div>
+        <div class="max-w-6xl mx-auto flex flex-wrap justify-center gap-6 px-6">
+            <div class="rounded-lg shadow-lg bg-secondary border border-gray-200 overflow-hidden flex flex-col w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)]">
+                <div class="p-6 flex-1">
+                    <h3 class="text-2xl font-bold text-white text-center">
+                        Colocation Providers
+                    </h3>
+                    <p class="mt-2 text-white text-center">
+                        Maximise compute capacity for your customers within shared power constraints.
+                    </p>
+                </div>
+                <img src="img/ecosystem/green_data_center.jpg" alt="green data center"
+                     class="w-full h-64 object-cover opacity-75" loading="lazy">
+            </div>
+            <div class="rounded-lg shadow-lg bg-secondary border border-gray-200 overflow-hidden flex flex-col w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)]">
+                <div class="p-6 flex-1">
+                    <h3 class="text-2xl font-bold text-white text-center">
+                        Enterprise
+                    </h3>
+                    <p class="mt-2 text-white text-center">
+                        Scale compute capacity and control costs without expanding power infrastructure or modifying
+                        application code.
+                    </p>
+                </div>
+                <img src="img/ecosystem/enterprise.jpg" alt="Enterprise"
+                     class="w-full h-64 object-cover opacity-75" loading="lazy">
+            </div>
+            <div class="rounded-lg shadow-lg bg-secondary border border-gray-200 overflow-hidden flex flex-col w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)]">
+                <div class="p-6 flex-1">
+                    <h3 class="text-2xl text-white font-bold text-center">
+                        Utility Providers
+                    </h3>
+                    <p class="mt-2 text-white text-center">
+                        Actively balance grid demand by enrolling controllable data centre load.
+                    </p>
+                </div>
+                <img src="img/ecosystem/utility_provider.jpg" alt="Utility Provider"
+                     class="w-full h-64 object-cover opacity-75" loading="lazy">
+            </div>
+            <div class="rounded-lg shadow-lg bg-secondary border border-gray-200 overflow-hidden flex flex-col w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)]">
+                <div class="p-6 flex-1">
+                    <h3 class="text-2xl font-bold text-white text-center">
+                        Managed Service Providers
+                    </h3>
+                    <p class="mt-2 text-white text-center">
+                        Deliver scalable compute with a new capability to balance performance, cost, and energy.
+                    </p>
+                </div>
+                <img src="img/ecosystem/services.jpg" alt="Service Provider"
+                     class="w-full h-64 object-cover opacity-75" loading="lazy">
+            </div>
+            <div class="rounded-lg shadow-lg bg-secondary border border-gray-200 overflow-hidden flex flex-col w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)]">
+                <div class="p-6 flex-1">
+                    <h3 class="text-2xl font-bold text-white text-center">
+                        Server Manufacturers
+                    </h3>
+                    <p class="mt-2 text-white text-center">
+                        Deploy more compute capacity within existing power constraints.
+                    </p>
+                </div>
+                <img src="img/ecosystem/server.jpg" alt="Server image"
+                     class="w-full h-64 object-cover opacity-75" loading="lazy">
+            </div>
+        </div>
+    </section>
+    <!-- About Us Section -->
+    <section id="aboutus" class="bg-gradient-to-r from-primary to-secondary py-6 scroll-mt-24">
+        <div class="max-w-6xl mx-auto text-center mb-6 px-6 py-6">
+            <h2 class="text-2xl text-white md:text-4xl font-bold">
+                Leadership & Advisors
+            </h2>
+            <p class="mt-2 text-white">
+                Our team combines deep expertise in data centre operations, energy management, orchestration, systems
+                design, AI and HPC.
+            </p>
+        </div>
+        <div class="max-w-6xl mx-auto flex flex-wrap justify-center gap-6 px-6">
+            <div class="rounded-lg shadow-lg bg-primary border border-gray-200 overflow-hidden flex flex-col w-full md:w-[calc(25%-1.125rem)]">
+                <div class="p-2 flex items-center justify-center min-h-[240px]">
+                    <img src="img/team/adrian.jpg" alt="Adrian Hoban"
+                         class="w-40 h-56 object-cover rounded-lg bg-gray-200" loading="lazy">
+                </div>
+                <div class="p-2 text-center flex-1">
+                    <h3 class="text-2xl text-white font-bold">
+                        Adrian Hoban
+                    </h3>
+                    <p class="text-white mb-2">
+                        Co-Founder & CEO
+                    </p>
+                    <a href="https://linkedin.com/in/adrian-hoban" target="_blank"
+                       class="inline-block text-white hover:text-orange">
+                        <svg class="w-6 h-6 mx-auto" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.762 2.239 5 5 5h14c2.762 0 5-2.238 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm13.5 11.268h-3v-5.604c0-1.337-.026-3.065-1.867-3.065-1.867 0-2.154 1.459-2.154 2.968v5.701h-3v-10h2.884v1.367h.041c.402-.764 1.386-1.567 2.852-1.567 3.049 0 3.612 2.006 3.612 4.612v5.588z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="rounded-lg shadow-lg bg-primary border border-gray-200 overflow-hidden flex flex-col w-full md:w-[calc(25%-1.125rem)]">
+                <div class="p-2 flex items-center justify-center min-h-[240px]">
+                    <img src="img/team/thijs.jpg" alt="Thijs Metsch"
+                         class="w-40 h-56 object-cover rounded-lg bg-gray-200" loading="lazy">
+                </div>
+                <div class="p-2 text-center flex-1">
+                    <h3 class="text-2xl text-white font-bold">
+                        Thijs Metsch
+                    </h3>
+                    <p class="text-white mb-2">
+                        Co-Founder
+                    </p>
+                    <a href="https://linkedin.com/in/thijsmetsch" target="_blank"
+                       class="inline-block text-white hover:text-orange">
+                        <svg class="w-6 h-6 mx-auto" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.762 2.239 5 5 5h14c2.762 0 5-2.238 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm13.5 11.268h-3v-5.604c0-1.337-.026-3.065-1.867-3.065-1.867 0-2.154 1.459-2.154 2.968v5.701h-3v-10h2.884v1.367h.041c.402-.764 1.386-1.567 2.852-1.567 3.049 0 3.612 2.006 3.612 4.612v5.588z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="rounded-lg shadow-lg bg-primary border border-gray-200 overflow-hidden flex flex-col w-full md:w-[calc(25%-1.125rem)]">
+                <div class="p-2 flex items-center justify-center min-h-[240px]">
+                    <img src="img/team/rene.jpg" alt="René Torres"
+                         class="w-40 h-56 object-cover rounded-lg bg-gray-200" loading="lazy">
+                </div>
+                <div class="p-2 text-center flex-1">
+                    <h3 class="text-2xl text-white font-bold">
+                        René Torres
+                    </h3>
+                    <p class="text-white mb-2">
+                        Advisor
+                    </p>
+                    <a href="https://www.linkedin.com/in/ren%C3%A9-torres-mba" target="_blank"
+                       class="inline-block text-white hover:text-orange">
+                        <svg class="w-6 h-6 mx-auto" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.762 2.239 5 5 5h14c2.762 0 5-2.238 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm13.5 11.268h-3v-5.604c0-1.337-.026-3.065-1.867-3.065-1.867 0-2.154 1.459-2.154 2.968v5.701h-3v-10h2.884v1.367h.041c.402-.764 1.386-1.567 2.852-1.567 3.049 0 3.612 2.006 3.612 4.612v5.588z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="rounded-lg shadow-lg bg-primary border border-gray-200 overflow-hidden flex flex-col w-full md:w-[calc(25%-1.125rem)]">
+                <div class="p-2 flex items-center justify-center min-h-[240px]">
+                    <img src="img/team/pete.jpg" alt="Pete Manca"
+                         class="w-40 h-56 object-cover rounded-lg bg-gray-200" loading="lazy">
+                </div>
+                <div class="p-2 text-center flex-1">
+                    <h3 class="text-2xl text-white font-bold">
+                        Pete Manca
+                    </h3>
+                    <p class="text-white mb-2">
+                        Advisor
+                    </p>
+                    <a href="https://www.linkedin.com/in/petemanca" target="_blank"
+                       class="inline-block text-white hover:text-orange">
+                        <svg class="w-6 h-6 mx-auto" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.762 2.239 5 5 5h14c2.762 0 5-2.238 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm13.5 11.268h-3v-5.604c0-1.337-.026-3.065-1.867-3.065-1.867 0-2.154 1.459-2.154 2.968v5.701h-3v-10h2.884v1.367h.041c.402-.764 1.386-1.567 2.852-1.567 3.049 0 3.612 2.006 3.612 4.612v5.588z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Join Our Team Section -->
+    <section id="join_us" class="py-6 bg-secondary scroll-mt-24">
+        <div class="max-w-4xl mx-auto text-center px-6 py-6">
+            <h2 class="text-2xl md:text-4xl font-bold text-white mb-6">
+                Join Our Team
+            </h2>
+            <p class="text-white mb-6 text-base">
+                Redefine how the world powers compute.
+            </p>
+            <p class="text-white mb-6 text-base">
+                Build systems that expand capacity, reduce energy use, and drive a more efficient digital future.
+            </p>
+            <a href="mailto:info@sustainai.energy?subject=Careers%20at%20Sustain%20AI"
+               class="bg-orange px-6 py-2 rounded-lg text-white font-semibold shadow-lg hover:bg-light hover:text-primary">
+                Apply Now
+            </a>
+        </div>
+    </section>
+    <!-- Request Demo Section -->
+    <section id="contact" class="py-6 bg-white scroll-mt-24">
+        <div class="max-w-4xl mx-auto text-center px-6 py-6">
+            <h2 class="text-2xl md:text-4xl font-bold text-primary mb-6">
+                Ready to see Sustain AI in action?
+            </h2>
+            <p class="text-base text-gray-600 mb-6">
+                Understand how energy-aware orchestration can activate additional capacity and reduce operational constraints in your infrastructure.
+            </p>
+            <a href="mailto:info@sustainai.energy?subject=Request%20a%20Demo%20-%20Sustain%20AI&body=Hi%20Sustain%20AI%2C%0A%0AI%20would%20like%20to%20request%20a%20demo.%0A%0ATo%20help%20us%20understand%20your%20needs%2C%20please%20fill%20in%20the%20following%3A%0A%0A1.%20Company%20name%3A%0A2.%20Industry%3A%0A3.%20Current%20data%20centre%20setup%20(colocation%2Fenterprise%2Fhybrid)%3A%0A4.%20Main%20challenge%20(power%20constraints%2C%20cost%2C%20efficiency%2C%20other)%3A%0A5.%20Approximate%20scale%20(MW%20or%20number%20of%20racks)%3A%0A6.%20Timeline%20for%20evaluation%3A%0A%0AThanks"
+               class="bg-orange px-6 py-2 rounded-lg text-white font-semibold shadow-lg hover:bg-light hover:text-primary">
+                Request a Demo
+            </a>
+        </div>
+    </section>
 </main>
-
+<!-- Footer -->
+<footer id="footer-section" class="relative bg-primary border-t border-gray-200 scroll-mt-24">
+    <div class="max-w-6xl mx-auto px-6 py-6 grid md:grid-cols-4 gap-6 items-start">
+        <!-- Left: Logo + Company Name -->
+        <a href="index.html"
+           class="flex items-center justify-center mb-6 md:mb-0 md:items-start md:justify-start hover:opacity-75">
+            <div class="logo mr-2">
+                <img src="img/logo/logo_white.svg" alt="Sustain AI Logo" class="w-12 h-12">
+            </div>
+            <div class="flex flex-col text-white leading-none">
+                <span class="text-xl font-bold">Sustain AI</span>
+                <span class="text-sm">The energy operating system.</span>
+            </div>
+        </a>
+        <!-- Center: Social icons + Email -->
+        <div class="flex flex-col items-center space-y-6 mt-6 md:mt-0">
+            <div class="flex space-x-6">
+                <!-- GitHub Icon -->
+                <a href="https://github.com/sustainai-energy" target="_blank"
+                   class="text-white hover:text-orange">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 0.297C5.373 0.297 0 5.67 0 12.297c0 5.303 3.438 9.8 8.205 11.387.6.11.82-.26.82-.577v-2.234c-3.338.724-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.085 1.838 1.237 1.838 1.237 1.07 1.834 2.809 1.304 3.495.997.108-.775.418-1.304.762-1.604-2.665-.3-5.466-1.332-5.466-5.931 0-1.31.468-2.382 1.235-3.222-.123-.303-.536-1.523.117-3.176 0 0 1.008-.322 3.3 1.23a11.52 11.52 0 013.003-.403c1.018.005 2.043.137 3.003.403 2.29-1.552 3.296-1.23 3.296-1.23.655 1.653.242 2.873.119 3.176.77.84 1.234 1.912 1.234 3.222 0 4.609-2.803 5.625-5.475 5.921.429.369.812 1.096.812 2.21v3.276c0 .319.218.694.825.576C20.565 22.092 24 17.593 24 12.297 24 5.67 18.627.297 12 .297z"/>
+                    </svg>
+                </a>
+                <!-- LinkedIn Icon -->
+                <a href="https://linkedin.com" target="_blank" class="text-white hover:text-orange">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.762 2.239 5 5 5h14c2.762 0 5-2.238 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm13.5 11.268h-3v-5.604c0-1.337-.026-3.065-1.867-3.065-1.867 0-2.154 1.459-2.154 2.968v5.701h-3v-10h2.884v1.367h.041c.402-.764 1.386-1.567 2.852-1.567 3.049 0 3.612 2.006 3.612 4.612v5.588z"/>
+                    </svg>
+                </a>
+            </div>
+            <a href="mailto:info@sustainai.energy" class="text-white hover:text-orange">info@sustainai.energy</a>
+        </div>
+        <!-- Legal Links -->
+        <div class="flex flex-col items-center md:items-end space-y-2 mt-6 md:mt-0 text-center text-white md:text-right">
+            <a href="legal.html#terms" class="hover:text-orange text-sm">Terms & Conditions</a>
+            <a href="legal.html#privacy" class="hover:text-orange text-sm">Privacy Policy</a>
+            <a href="legal.html#cookies" class="hover:text-orange text-sm scroll-mt-24">Cookie Policy</a>
+            <a href="legal.html#accessibility" class="hover:text-orange text-sm">Accessibility Statement</a>
+            <a href="legal.html#claims" class="hover:text-orange text-sm">Understanding Performance Claims</a>
+        </div>
+        <!-- Right: Address -->
+        <div class="text-center text-sm md:text-right text-white space-y-2 mt-6 md:mt-0">
+            <p>Unit 1 Ballycasey Business Park<br>Ballycasey Court<br>Shannon<br>Co. Clare<br>Ireland<br>V14 CK22
+            </p>
+        </div>
+    </div>
+    <div class="max-w-6xl mx-auto px-6 py-6 border-t border-white text-center text-sm text-white">
+        <p>© 2026 Sustain AI Limited. All rights reserved.</p>
+        <p class="mt-2">Registered in Ireland. CRO No. 804324</p>
+    </div>
+</footer>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const btn = document.getElementById('menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        const header = document.getElementById('main-header');
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+        menu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+        });
+        let lastScrollY = window.scrollY;
+        window.addEventListener('scroll', () => {
+            const currentScrollY = window.scrollY;
+            if (currentScrollY > 50) {
+                header.classList.replace('py-6', 'py-2');
+                header.classList.replace('bg-secondary', 'bg-secondary/90');
+            } else {
+                header.classList.replace('py-2', 'py-6');
+                header.classList.replace('bg-secondary/90', 'bg-secondary');
+            }
+            if (currentScrollY > lastScrollY && currentScrollY > 200) {
+                header.classList.add('-translate-y-full');
+            } else {
+                header.classList.remove('-translate-y-full');
+            }
+            lastScrollY = currentScrollY;
+        });
+    });
+</script>
 </body>
 </html>

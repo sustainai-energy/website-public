@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description"
+          content="Sustain AI is an energy operating system for data centres operating under power constraints. We help operators increase compute efficiency, reduce energy consumption, and unlock additional capacity without expanding infrastructure.">
+    <meta name="keywords"
+          content="data center energy optimisation, data center efficiency, data centre energy optimisation, data centre efficiency, AI for data centres, compute orchestration, energy management system, power constrained computing, data centre optimisation software, grid responsive computing, infrastructure efficiency, sustainable data centres">
+    <meta property="og:title"
+          content="Sustain AI - Energy Optimisation for Power-Constrained Data Centres">
+    <meta property="og:description"
+          content="An energy operating system for data centres. Sustain AI orchestrates compute within power constraints to increase efficiency, reduce energy use, and unlock capacity.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sustainai.energy">
+    <meta name="application-name" content="Sustain AI">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/logo/logo_orange.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Sustain AI | Energy Operating System for Data Centres</title>
+    <link href="output.css" rel="stylesheet">
+</head>
+<body class="bg-white text-gray-600 font-sans flex flex-col min-h-screen">
+<header id="main-header"
+        class="sticky top-0 z-50 w-full flex flex-row justify-between items-center bg-secondary backdrop-blur-md shadow-lg px-6 py-6 border-b border-gray-200 transition-all duration-300">
+    <a href="index.html" class="flex items-start hover:opacity-75">
+        <div class="logo mr-2">
+            <img src="img/logo/logo_white.svg" alt="Sustain AI Logo" class="w-12 h-12">
+        </div>
+        <div class="flex flex-col text-white leading-none">
+            <span class="text-xl font-bold">Sustain AI</span>
+            <span class="text-sm">The energy operating system.</span>
+        </div>
+    </a>
+    <!-- Desktop menu - centered on desktop -->
+    <nav id="desktop-menu" class="hidden md:flex space-x-6 text-white font-medium">
+        <a href="index.html#solution" class="hover:text-orange hover:underline">Solution</a>
+        <a href="index.html#technology" class="hover:text-orange hover:underline">Technology</a>
+        <a href="index.html#ecosystem" class="hover:text-orange hover:underline">Ecosystem</a>
+        <a href="index.html#aboutus" class="hover:text-orange hover:underline">About Us</a>
+        <a href="index.html#contact" class="hover:text-orange hover:underline">Request Demo</a>
+    </nav>
+    <!-- Mobile menu (hidden by default) -->
+    <div id="mobile-menu"
+         class="absolute top-full right-6 mt-2 w-48 bg-white shadow-lg rounded-lg hidden flex-col py-2">
+        <a href="index.html#solution" class="block px-2 py-2 text-gray-600 border-b border-gray-200">Solution</a>
+        <a href="index.html#technology" class="block px-2 py-2 text-gray-600 border-b border-gray-200">Technology</a>
+        <a href="index.html#ecosystem" class="block px-2 py-2 text-gray-600 border-b border-gray-200">Ecosystem</a>
+        <a href="index.html#aboutus" class="block px-2 py-2 text-gray-600 border-b border-gray-200">About Us</a>
+        <a href="index.html#contact" class="block px-2 py-2 text-gray-600">Request Demo</a>
+    </div>
+    <!-- Mobile burger button -->
+    <div class="md:hidden ml-auto">
+        <button id="menu-btn" class="text-white focus:outline-none" aria-label="Toggle navigation menu">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+        </button>
+    </div>
+</header>
+<main class="flex-1 flex items-center justify-center">
+    <div class="max-w-6xl mx-auto px-6 py-6">
+        <h1 class="text-primary text-4xl md:text-6xl font-bold text-center mb-6">Legal & Policies</h1>
+        <!-- Terms & Conditions -->
+        <section id="terms" class="mb-6 scroll-mt-24">
+            <h2 class="text-primary text-2xl md:text-4xl font-bold mb-6">Terms &
+                Conditions</h2>
+            <div class="p-6 rounded-lg shadow-lg bg-white border border-gray-200">
+                <p class="mb-6">
+                    This website is provided by Sustain AI Limited for informational purposes only. By accessing this
+                    site, you agree to these terms.
+                </p>
+                <p class="mb-6">
+                    Nothing on this website constitutes an offer, commitment, or contractual obligation. Any commercial
+                    engagement will be governed by separate written agreements.
+                </p>
+                <p class="mb-6">
+                    All content is owned by or licensed to Sustain AI Limited and is protected by applicable
+                    intellectual property laws. Content may not be used without prior written consent.
+                </p>
+                <p class="mb-6">
+                    The website is provided “as is” without warranties of any kind. We do not guarantee accuracy,
+                    completeness, or suitability for any purpose.
+                </p>
+                <p class="mb-6">
+                    This website is hosted and delivered via third-party infrastructure providers. We do not control all
+                    aspects of such infrastructure and cannot guarantee uninterrupted or error-free availability.
+                </p>
+                <p>
+                    To the fullest extent permitted by law, Sustain AI Limited shall not be liable for any loss arising
+                    from use of this website or reliance on its content. These terms are governed by the laws of
+                    Ireland.
+                </p>
+            </div>
+        </section>
+        <!-- Privacy Policy -->
+        <section id="privacy" class="mb-6 scroll-mt-24">
+            <h2 class="text-primary text-2xl md:text-4xl font-bold mb-6">Privacy Policy</h2>
+            <div class="p-6 rounded-lg shadow-lg bg-white border border-gray-200">
+                <p class="mb-6">
+                    Sustain AI Limited processes personal data in accordance with applicable data protection laws,
+                    including GDPR and UK GDPR.
+                </p>
+                <p class="mb-6">
+                    This website is intended for business users. We may collect limited personal data such as name,
+                    company, contact details, and technical usage data.
+                </p>
+                <p class="mb-6">
+                    This website is hosted by a third-party provider. As part of normal operations, technical data such
+                    as IP address, browser type, and access logs may be processed for security, performance, and
+                    operational purposes.
+                </p>
+                <p class="mb-6">
+                    Data is used to respond to enquiries, manage business relationships, improve the website, maintain
+                    website security, and improve performance.
+                </p>
+                <p class="mb-6">
+                    Processing is based on legitimate interests or consent where required. We do not sell personal data.
+                </p>
+                <p class="mb-6">
+                    Data may be shared with service providers, including hosting providers, and may be processed outside
+                    the EU or the UK with appropriate safeguards in place.
+                </p>
+                <p>
+                    You have rights to access, correct, or request deletion of your data.
+                    Contact: <span class="font-semibold">info@sustainai.energy</span>
+                </p>
+            </div>
+        </section>
+        <!-- Cookie Policy -->
+        <section id="cookies" class="mb-6 scroll-mt-24">
+            <h2 class="text-primary text-2xl md:text-4xl font-bold mb-6">Cookie Policy</h2>
+            <div class="p-6 rounded-lg shadow-lg bg-white border border-gray-200">
+                <p class="mb-6">
+                    This website does not use cookies for analytics, tracking, or advertising purposes.
+                </p>
+                <p class="mb-6">
+                    The site is hosted by a third-party provider. As part of standard web infrastructure, limited
+                    technical data (such as IP address and request metadata) may be processed for security and delivery
+                    purposes. This is not used by Sustain AI Limited for tracking or profiling.
+                </p>
+                <p>
+                    If cookies or similar technologies are introduced in the future, this policy will be updated and
+                    consent mechanisms
+                    implemented where required.
+                </p>
+            </div>
+        </section>
+        <!-- Accessibility Statement -->
+        <section id="accessibility" class="mb-6 scroll-mt-24">
+            <h2 class="text-primary text-2xl md:text-4xl font-bold mb-6">Accessibility Statement</h2>
+            <div class="p-6 rounded-lg shadow-lg bg-white border border-gray-200">
+                <p class="mb-6">
+                    Sustain AI Limited aims to make this website accessible and usable for a broad range of users.
+                </p>
+                <p class="mb-6">
+                    We aim to follow recognised accessibility standards, including WCAG 2.1 AA, where reasonably
+                    practicable.
+                </p>
+                <p class="mb-6">
+                    We continuously review and improve the accessibility of our website, although some areas may not yet
+                    fully meet all standards.
+                </p>
+                <p class="mb-6">
+                    This website is delivered using standard web technologies and third-party hosting infrastructure. We
+                    aim to ensure accessibility across commonly used devices and browsers.
+                </p>
+                <p>
+                    If you encounter accessibility issues, contact us at:
+                    <span class="font-semibold">info@sustainai.energy</span>
+                </p>
+            </div>
+        </section>
+        <!-- Understanding Performance Claims -->
+        <section id="claims" class="mb-6 scroll-mt-24">
+            <h2 class="text-primary text-2xl md:text-4xl font-bold mb-6">Understanding Performance Claims</h2>
+            <div class="p-6 rounded-lg shadow-lg bg-white border border-gray-200">
+                <p class=" mb-6">
+                    Any performance, efficiency, or capacity improvement figures presented on this website (including
+                    “up to” statements) are illustrative and are derived from modelling, simulations, or observed
+                    results in specific environments. These figures are intended to illustrate potential performance
+                    ranges rather than expected or average outcomes.
+                </p>
+                <p class="mb-6">
+                    Such figures do not represent typical results and may reflect outcomes achieved under specific or
+                    controlled conditions. Actual outcomes may vary materially depending on factors including, but not
+                    limited to:
+                </p>
+                <ul class="list-disc list-inside mb-6 pl-6">
+                    <li>workload type and variability;</li>
+                    <li>hardware configuration;</li>
+                    <li>system architecture;</li>
+                    <li>operating constraints;</li>
+                    <li>implementation approach;</li>
+                    <li>configuration choices are made during deployment and during operation.</li>
+                </ul>
+                <p class="mb-6">
+                    Environmental impact figures (e.g. CO2 savings) are estimates derived from energy efficiency
+                    improvements and applicable emissions factors, which may vary by region and energy source. No
+                    representation or warranty is given that any particular result will be achieved. Any performance
+                    commitments will be defined solely in formal commercial agreements, where applicable.
+                </p>
+                <p>
+                    For detailed information about our methodology and the factors that may affect performance in your
+                    environment, please contact us at info@sustainai.energy.
+                </p>
+            </div>
+        </section>
+        <!-- Third Party Libraries -->
+        <section id="library_attribution" class="mb-6 scroll-mt-24">
+            <h2 class="text-primary text-2xl md:text-4xl font-bold mb-6">Third Party Libraries</h2>
+            <div class="p-6 rounded-lg shadow-lg bg-white border border-gray-200">
+                <p class=" mb-6">
+                    This website uses Tailwind CSS (MIT License), Copyright (c) Tailwind Labs, Inc.
+                </p>
+                <p class=" mb-6">
+                    Fonts are provided by Google Fonts under their respective terms of use.
+                </p>
+            </div>
+        </section>
+        <!-- Image Attribution -->
+        <section id="attribution" class="mb-6 scroll-mt-24">
+            <h2 class="text-primary text-2xl md:text-4xl font-bold mb-6">Image Attribution</h2>
+            <div class="p-6 rounded-lg shadow-lg bg-white border border-gray-200">
+                <ul class="list-disc list-outside mb-6 pl-6">
+                    <li>
+                        <a href="img/ecosystem/enterprise.jpg">Enterprise</a>: Photo by <a
+                            href="https://unsplash.com/photos/low-angle-photo-of-city-high-rise-buildings-during-daytime-PhYq704ffdA"
+                            target="_blank"
+                            class="text-[#2a7b9b] hover:underline">Sean Pollock</a> on Unsplash.
+                    </li>
+                    <li>
+                        <a href="img/ecosystem/green_data_center.jpg">Green data center</a>: © Thijs Metsch with
+                        AI edits.
+                    </li>
+                    <li>
+                        <a href="img/ecosystem/server.jpg">Server</a>: Photo by
+                        <a href="https://www.domaintechnik.at/"
+                           target="_blank"
+                           class="text-[#2a7b9b] hover:underline">Domaintechnik
+                            Ledl.net</a> on <a
+                            href="https://unsplash.com/photos/server-rack-with-blinking-green-lights-VHmBX7FnXw0">Unsplash</a>.
+                    </li>
+                    <li>
+                        <a href="img/ecosystem/services.jpg">Services</a>: Photo by <a
+                            href="https://unsplash.com/photos/white-and-black-samsung-signage-aielvGxZB0g"
+                            target="_blank"
+                            class="text-[#2a7b9b] hover:underline">Erik Mclean</a> on Unsplash.
+                    </li>
+                    <li>
+                        <a href="img/ecosystem/utility_provider.jpg">Utility providers</a>: Photo by <a
+                            href="https://unsplash.com/photos/white-electic-windmill-pONBhDyOFoM" target="_blank"
+                            class="text-[#2a7b9b] hover:underline"> Nicholas Doherty</a> on Unsplash.
+                    </li>
+                    <li>
+                        <a href="img/team/adrian.jpg">Adrian Hoban</a>: © Adrian Hoban.
+                    </li>
+                    <li>
+                        <a href="img/team/pete.jpg">Pete Manca</a>: © Pete Manca.
+                    </li>
+                    <li>
+                        <a href="img/team/rene.jpg">René Torres</a>: © René Torres.
+                    </li>
+                    <li>
+                        <a href="img/team/thijs.jpg">Thijs Metsch</a>: © Thijs Metsch.
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
+</main>
+<!-- Footer -->
+<footer id="footer-section" class="relative bg-primary border-t border-gray-200 scroll-mt-24">
+    <div class="max-w-6xl mx-auto px-6 py-6 grid md:grid-cols-4 gap-6 items-start">
+        <!-- Left: Logo + Company Name -->
+        <a href="index.html"
+           class="flex items-center justify-center mb-6 md:mb-0 md:items-start md:justify-start hover:opacity-75">
+            <div class="logo mr-2">
+                <img src="img/logo/logo_white.svg" alt="Sustain AI Logo" class="w-12 h-12">
+            </div>
+            <div class="flex flex-col text-white leading-none">
+                <span class="text-xl font-bold">Sustain AI</span>
+                <span class="text-sm">The energy operating system.</span>
+            </div>
+        </a>
+        <!-- Center: Social icons + Email -->
+        <div class="flex flex-col items-center space-y-6 mt-6 md:mt-0">
+            <div class="flex space-x-6">
+                <!-- GitHub Icon -->
+                <a href="https://github.com/sustainai-energy" target="_blank"
+                   class="text-white hover:text-orange">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 0.297C5.373 0.297 0 5.67 0 12.297c0 5.303 3.438 9.8 8.205 11.387.6.11.82-.26.82-.577v-2.234c-3.338.724-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.085 1.838 1.237 1.838 1.237 1.07 1.834 2.809 1.304 3.495.997.108-.775.418-1.304.762-1.604-2.665-.3-5.466-1.332-5.466-5.931 0-1.31.468-2.382 1.235-3.222-.123-.303-.536-1.523.117-3.176 0 0 1.008-.322 3.3 1.23a11.52 11.52 0 013.003-.403c1.018.005 2.043.137 3.003.403 2.29-1.552 3.296-1.23 3.296-1.23.655 1.653.242 2.873.119 3.176.77.84 1.234 1.912 1.234 3.222 0 4.609-2.803 5.625-5.475 5.921.429.369.812 1.096.812 2.21v3.276c0 .319.218.694.825.576C20.565 22.092 24 17.593 24 12.297 24 5.67 18.627.297 12 .297z"/>
+                    </svg>
+                </a>
+                <!-- LinkedIn Icon -->
+                <a href="https://linkedin.com" target="_blank" class="text-white hover:text-orange">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.762 2.239 5 5 5h14c2.762 0 5-2.238 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm13.5 11.268h-3v-5.604c0-1.337-.026-3.065-1.867-3.065-1.867 0-2.154 1.459-2.154 2.968v5.701h-3v-10h2.884v1.367h.041c.402-.764 1.386-1.567 2.852-1.567 3.049 0 3.612 2.006 3.612 4.612v5.588z"/>
+                    </svg>
+                </a>
+            </div>
+            <a href="mailto:info@sustainai.energy" class="text-white hover:text-orange">info@sustainai.energy</a>
+        </div>
+        <!-- Legal Links -->
+        <div class="flex flex-col items-center md:items-end space-y-2 mt-6 md:mt-0 text-center text-white md:text-right">
+            <a href="#terms" class="hover:text-orange text-sm">Terms & Conditions</a>
+            <a href="#privacy" class="hover:text-orange text-sm">Privacy Policy</a>
+            <a href="#cookies" class="hover:text-orange text-sm scroll-mt-24">Cookie Policy</a>
+            <a href="#accessibility" class="hover:text-orange text-sm">Accessibility Statement</a>
+            <a href="#claims" class="hover:text-orange text-sm">Understanding Performance Claims</a>
+        </div>
+        <!-- Right: Address -->
+        <div class="text-center text-sm md:text-right text-white space-y-2 mt-6 md:mt-0">
+            <p>Unit 1 Ballycasey Business Park<br>Ballycasey Court<br>Shannon<br>Co. Clare<br>Ireland<br>V14 CK22
+            </p>
+        </div>
+    </div>
+    <div class="max-w-6xl mx-auto px-6 py-6 border-t border-white text-center text-sm text-white">
+        <p>© 2026 Sustain AI Limited. All rights reserved.</p>
+        <p class="mt-2">Registered in Ireland. CRO No. 804324</p>
+    </div>
+</footer>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const btn = document.getElementById('menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        const header = document.getElementById('main-header');
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+        menu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+        });
+        let lastScrollY = window.scrollY;
+        window.addEventListener('scroll', () => {
+            const currentScrollY = window.scrollY;
+            if (currentScrollY > 50) {
+                header.classList.replace('py-6', 'py-2');
+                header.classList.replace('bg-secondary', 'bg-secondary/90');
+            } else {
+                header.classList.replace('py-2', 'py-6');
+                header.classList.replace('bg-secondary/90', 'bg-secondary');
+            }
+            if (currentScrollY > lastScrollY && currentScrollY > 200) {
+                header.classList.add('-translate-y-full');
+            } else {
+                header.classList.remove('-translate-y-full');
+            }
+            lastScrollY = currentScrollY;
+        });
+    });
+</script>
+</body>
+</html>

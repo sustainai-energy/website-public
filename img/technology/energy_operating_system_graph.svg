@@ -1,0 +1,178 @@
+<svg viewBox="0 0 800 600" width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+    <path d="M150 170 Q150 220 346 260" stroke="#4caf50" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M650 170 Q650 220 455 260" stroke="#4caf50" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M150 430 Q150 380 346 340" stroke="#4caf50" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M650 430 Q650 380 455 340" stroke="#4caf50" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <rect x="50" y="50" width="200" height="120" fill="none" stroke="#fff" stroke-width="4" rx="8"/>
+    <text x="150" y="104" font-family="Arial" font-size="24" fill="#fff" text-anchor="middle">IT Infrastructure</text>
+    <text x="150" y="140" font-family="Arial" font-size="24" fill="#fff" text-anchor="middle">Owners</text>
+    <rect x="550" y="50" width="200" height="120" fill="none" stroke="#fff" stroke-width="4" rx="8"/>
+    <text x="650" y="104" font-family="Arial" font-size="24" fill="#fff" text-anchor="middle">Utility</text>
+    <text x="650" y="140" font-family="Arial" font-size="24" fill="#fff" text-anchor="middle">Providers</text>
+    <rect x="50" y="430" width="200" height="120" fill="none" stroke="#fff" stroke-width="4" rx="8"/>
+    <text x="150" y="484" font-family="Arial" font-size="24" fill="#fff" text-anchor="middle">Compute</text>
+    <text x="150" y="520" font-family="Arial" font-size="24" fill="#fff" text-anchor="middle">Infrastructure</text>
+    <rect x="550" y="430" width="200" height="120" fill="none" stroke="#fff" stroke-width="4" rx="8"/>
+    <text x="650" y="484" font-family="Arial" font-size="24" fill="#fff" text-anchor="middle">Cooling, Battery,</text>
+    <text x="650" y="520" font-family="Arial" font-size="24" fill="#fff" text-anchor="middle">Facilities</text>
+    <path d="M250 490 L550 490" stroke="#fff" stroke-width="4" fill="none" stroke-dasharray="12,12"
+          stroke-linecap="round"/>
+    <g transform="translate(400, 300) scale(1.5) translate(-64, -64)">
+        <path
+                d="M64 24 C93 24 104 35 104 64 C104 93 93 104 64 104 C35 104 24 93 24 64 C24 35 35 24 64 24 Z"
+                fill="none"
+                stroke="#f45d22"
+                stroke-width="4"
+                id="squircle"/>
+        <path
+                d="M 35,95 C 40,77 56,62 80,50"
+                fill="none"
+                stroke="#f45d22"
+                stroke-width="4"
+                stroke-linecap="round"
+                id="arrow"/>
+        <path
+                d="m 79,46.5 7.5,0 -4.2,6.4 z"
+                fill="none"
+                stroke="#f45d22"
+                stroke-width="4"
+                stroke-linejoin="round"
+                id="arrowhead"/>
+        <path
+                d="m 25,44 c -10,0 -10,0 -10,0"
+                fill="none"
+                stroke="#f45d22"
+                stroke-width="4"
+                stroke-linecap="round"
+                id="pin0"/>
+        <ellipse
+                fill="none"
+                stroke="#f45d22"
+                stroke-width="4"
+                stroke-linecap="round"
+                id="pin0_end"
+                cx="10"
+                cy="44"
+                rx="4"
+                ry="4"/>
+        <path
+                d="m 25,84 c -10,0 -10,0 -10,0"
+                fill="none"
+                stroke="#f45d22"
+                stroke-width="4"
+                stroke-linecap="round"
+                id="pin1"/>
+        <ellipse
+                fill="none"
+                stroke="#f45d22"
+                stroke-width="4"
+                stroke-linecap="round"
+                id="pin1_end"
+                cx="10"
+                cy="84"
+                rx="4"
+                ry="4"/>
+        <path
+                d="m 44,103 c 0,0 0,0 0,10"
+                fill="none"
+                stroke="#f45d22"
+                stroke-width="4"
+                stroke-linecap="round"
+                id="pin2"/>
+        <ellipse
+                fill="none"
+                stroke="#f45d22"
+                stroke-width="4"
+                stroke-linecap="round"
+                id="pin2_end"
+                cx="44"
+                cy="118"
+                rx="4"
+                ry="4"/>
+        <path
+                d="m 84,103 c 0,0 0,0 0,10"
+                fill="none"
+                stroke="#f45d22"
+                stroke-width="4"
+                stroke-linecap="round"
+                id="pin3"/>
+        <ellipse
+                fill="none"
+                stroke="#f45d22"
+                stroke-width="4"
+                stroke-linecap="round"
+                id="pin3_end"
+                cx="84"
+                cy="118"
+                rx="4"
+                ry="4"/>
+        <path
+                d="m 103,84 c 0,0 10,0 10,0"
+                fill="none"
+                stroke="#f45d22"
+                stroke-width="4"
+                stroke-linecap="round"
+                id="pin4"/>
+        <ellipse
+                fill="none"
+                stroke="#f45d22"
+                stroke-width="4"
+                stroke-linecap="round"
+                id="pin4_end"
+                cx="118"
+                cy="84"
+                rx="4"
+                ry="4"/>
+        <path
+                d="m 103,44 c 0,0 10,0 10,0"
+                fill="none"
+                stroke="#f45d22"
+                stroke-width="4"
+                stroke-linecap="round"
+                id="pin5"/>
+        <ellipse
+                fill="none"
+                stroke="#f45d22"
+                stroke-width="4"
+                stroke-linecap="round"
+                id="pin5_end"
+                cx="118"
+                cy="44"
+                rx="4"
+                ry="4"/>
+        <path
+                d="m 84,25 c 0,0 0,0 0,-10"
+                fill="none"
+                stroke="#f45d22"
+                stroke-width="4"
+                stroke-linecap="round"
+                id="pin6"/>
+        <ellipse
+                fill="none"
+                stroke="#f45d22"
+                stroke-width="4"
+                stroke-linecap="round"
+                id="pin6_end"
+                cx="84"
+                cy="10"
+                rx="4"
+                ry="4"/>
+        <path
+                d="m 44,25 c 0,-10 0,0 0,-10"
+                fill="none"
+                stroke="#f45d22"
+                stroke-width="4"
+                stroke-linecap="round"
+                id="pin7"/>
+        <ellipse
+                fill="none"
+                stroke="#f45d22"
+                stroke-width="4"
+                stroke-linecap="round"
+                id="pin7_end"
+                cx="44"
+                cy="10"
+                rx="4"
+                ry="4"/>
+    </g>
+</svg>
